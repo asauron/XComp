@@ -1,0 +1,20 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+ package ast;
+
+import visitor.*;
+
+public class VoidTypeTree extends AST {
+
+    public VoidTypeTree() {
+    }
+
+    public Object accept(ASTVisitor v) {
+        return v.visitVoidTypeTree(this);
+    }
+
+}
+ 
